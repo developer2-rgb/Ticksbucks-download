@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TicksBucks - Official Windows App Download</title>
+    <link href="https://googleapis.com" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+        body {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            color: #f8fafc;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        header {
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: 800;
+            color: #38bdf8;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .logo span {
+            color: #ffffff;
+        }
+        .hero {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 60px 20px;
+            max-width: 850px;
+            margin: 0 auto;
+        }
+        .badge {
+            background: rgba(56, 189, 248, 0.15);
+            color: #38bdf8;
+            padding: 6px 16px;
+            border-radius: 50px;
+            font-size: 13px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            border: 1px solid rgba(56, 189, 248, 0.3);
+        }
+        h1 {
+            font-size: 48px;
+            font-weight: 800;
+            line-height: 1.2;
+            margin-bottom: 20px;
+            background: linear-gradient(to right, #ffffff, #94a3b8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        p.subtitle {
+            font-size: 18px;
+            color: #94a3b8;
+            margin-bottom: 40px;
+            line-height: 1.6;
+        }
+        .download-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            background: linear-gradient(135deg, #0284c7 0%, #2563eb 100%);
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 700;
+            padding: 18px 36px;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(37, 99, 235, 0.4);
+            transition: all 0.3s ease;
+        }
+        .download-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 35px rgba(37, 99, 235, 0.6);
+        }
+        .file-info {
+            margin-top: 14px;
+            font-size: 13px;
+            color: #64748b;
+        }
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            width: 100%;
+            margin-top: 60px;
+        }
+        .card {
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            padding: 25px;
+            border-radius: 16px;
+            text-align: left;
+        }
+        .card h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #38bdf8;
+        }
+        .card p {
+            font-size: 14px;
+            color: #94a3b8;
+            line-height: 1.5;
+        }
+        .note-box {
+            margin-top: 40px;
+            background: rgba(234, 179, 8, 0.1);
+            border: 1px solid rgba(234, 179, 8, 0.3);
+            padding: 16px 24px;
+            border-radius: 12px;
+            font-size: 14px;
+            color: #fde047;
+            max-width: 650px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 13px;
+            color: #475569;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        @media (max-width: 600px) {
+            h1 { font-size: 34px; }
+            .download-btn { width: 100%; justify-content: center; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">⚡ Ticks<span>Bucks</span></div>
+        <div style="font-size: 14px; color: #94a3b8;">Version 1.0 • Windows</div>
+    </header>
+
+    <section class="hero">
+        <div class="badge">✨ Official Desktop Application</div>
+        <h1>Experience TicksBucks Directly on Your Windows PC</h1>
+        <p class="subtitle">Fast, lightweight, and secure desktop software. Sign in effortlessly with your Google account, connect, and start chatting seamlessly.</p>
+
+        <!-- নিচের href-এ আপনার GitHub Release-এর ডাউনলোড লিংকটি বসিয়ে দেবেন -->
+        <a href="YOUR_GITHUB_RELEASE_DOWNLOAD_LINK_HERE" class="download-btn" download>
+            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
+            </svg>
+            Download for Windows (64-bit)
+        </a>
+        <div class="file-info">TicksBucksSetup.exe • Windows 10 / 11 • Free & Safe</div>
+
+        <div class="features">
+            <div class="card">
+                <h3>🔐 One-Click Google Login</h3>
+                <p>Built-in secure authentication lets you sign in instantly using your existing Google account.</p>
+            </div>
+            <div class="card">
+                <h3>💬 Real-Time Chat</h3>
+                <p>Stay connected and chat smoothly without needing to keep a web browser open.</p>
+            </div>
+            <div class="card">
+                <h3>🚀 Native Performance</h3>
+                <p>Dedicated desktop window with custom branding and fast local execution.</p>
+            </div>
+        </div>
+
+        <div class="note-box">
+            <strong>Installation Tip:</strong> If Windows SmartScreen shows a warning during installation, click <b>"More info"</b> and then click <b>"Run anyway"</b> to complete setup.
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2026 TicksBucks. All rights reserved.
+    </footer>
+
+</body>
+</html>
